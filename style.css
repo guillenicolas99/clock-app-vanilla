@@ -1,0 +1,90 @@
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #333;
+  font-family: monospace;
+  text-transform: uppercase;
+}
+
+h1, h2 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  color: #f2f2f2;
+  text-shadow: 2px 2px 3px #777;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+main {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.clock {
+  width: 250px;
+  height: 250px;
+  border: 15px solid #f2f2f2;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+  padding: 2rem;
+  box-shadow: 0 0 10px #777;
+}
+
+.clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.hand {
+  width: 50%;
+  height: 6px;
+  background-color: #f2f2f2;
+  position: absolute;
+  top: 50%;
+  box-shadow: 0 0 5px #FAF3F0;
+  transform: rotate(90deg);
+  transform-origin: 100%;
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.digital-clock {
+  border: 5px dashed #f2f2f2;
+  width: 90%;
+  padding: 20px 25px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+
+  font-family: 'DS-Digital', sans-serif;
+  font-size: 54px;
+  font-weight: 900;
+
+  color: #F6F1E9;
+}
