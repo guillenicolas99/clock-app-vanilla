@@ -12,7 +12,6 @@ document.querySelector('#app').innerHTML = `
       </div>
     </div>
 
-    <h2>Digital Clock</h2>
     <div class='digital-clock'>
     </div>
   </main>
