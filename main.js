@@ -14,11 +14,6 @@ document.querySelector('#app').innerHTML = `
 
     <h2>Digital Clock</h2>
     <div class='digital-clock'>
-      <div class='hour'></div>
-      <span>:</span>
-      <div class='min'></div>
-      <span>:</span>
-      <div class='sec'></div>
     </div>
   </main>
 `
@@ -27,9 +22,7 @@ const handHourEl = document.querySelector('.hand-hour')
 const handMinEl = document.querySelector('.hand-minute')
 const handSecEl = document.querySelector('.hand-second')
 
-const digitalHourEl = document.querySelector('.hour')
-const digitalMinEl = document.querySelector('.min')
-const digitalSecEl = document.querySelector('.sec')
+const digitalClock = document.querySelector('.digital-clock')
 
 
-SetUpClock(handHourEl, handMinEl, handSecEl, digitalHourEl, digitalMinEl, digitalSecEl)
+SetUpClock(handHourEl, handMinEl, handSecEl, digitalClock)
